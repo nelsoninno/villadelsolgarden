@@ -1,0 +1,8 @@
+# robots.txt for villadelsolsv.com
+# Every page is open and indexable, including AI search + user-fetch agents.
+
+User-agent: *
+Allow: /
+
+# AI guide: /llms.txt
+Sitemap: https://villadelsolsv.com/sitemap.xml

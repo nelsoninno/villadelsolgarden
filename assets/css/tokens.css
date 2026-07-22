@@ -1,0 +1,31 @@
+/* assets/css/tokens.css - COLORS + FONTS only. The one file to edit to re-skin.
+   Villa del Sol Garden palette, taken from the logo:
+   cream ground, deep forest green, warm gold, coral + leaf botanical accents. */
+:root{
+  /* Brand palette */
+  --bg:          #F8F3E8;   /* page background (cream) */
+  --surface:     #F1E8D6;   /* alternate section background (deeper cream) */
+  --card:        #FCFAF4;   /* cards */
+  --ink:         #2B2A24;   /* main body text (warm near-black) */
+  --forest:      #234A39;   /* deep green: headings, brand */
+  --forest-deep: #1B3A2D;   /* darkest green: footer */
+  --gold:        #C39A3D;   /* primary accent: buttons, links */
+  --gold-deep:   #A97F2C;   /* accent hover */
+  --coral:       #D98A6B;   /* secondary botanical accent */
+  --muted:       #6E695C;   /* secondary text */
+  --line:        rgba(35,74,57,.16); /* hairlines */
+  --sea:         #C4DBD0;   /* soft ocean (sketched map) */
+  --sea-deep:    #8FB6A6;   /* ocean wave lines (sketched map) */
+  --cream-lt:    #F4E6C6;   /* light cream for eyebrows over dark sections */
+
+  /* Footer credit colors (read by the EKY credit logo) */
+  --footer-bg:   var(--forest-deep);
+  --footer-fg:   #F3ECDD;
+
+  /* Fonts */
+  --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-body:    'Nunito Sans', system-ui, -apple-system, Segoe UI, sans-serif;
+
+  /* Layout */
+  --max: 1200px;
+}

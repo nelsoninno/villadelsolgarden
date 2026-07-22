@@ -1,0 +1,5 @@
+_source/
+CLAUDE.md
+*.zip
+.DS_Store
+Thumbs.db
