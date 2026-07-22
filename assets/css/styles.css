@@ -239,8 +239,12 @@ p{max-width:68ch}
     background:var(--bg);padding:1.2rem 1.5rem;gap:1rem;box-shadow:0 12px 30px rgba(27,58,45,.14)}
   .stay-grid,.exp-grid{grid-template-columns:1fr}
   .footer-top{grid-template-columns:1fr}
-  .icon-stats{grid-template-columns:1fr}
+  .icon-stats{grid-template-columns:repeat(2,1fr);gap:.7rem}
+  .icon-stat{padding:.7rem .75rem;gap:.6rem}
+  .icon-stat svg{width:26px;height:26px}
+  .icon-stat b{font-size:1.25rem}
   .hero-facts b{font-size:1.4rem}
+  .scroll-cue{display:none}
 }
 
 /* ---------- subpage: page hero ---------- */
@@ -248,7 +252,7 @@ p{max-width:68ch}
 .page-hero__media{position:absolute;inset:0;z-index:0}
 .page-hero__media img{width:100%;height:100%;object-fit:cover}
 .page-hero__media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,40,30,.35) 0%,rgba(18,36,28,.4) 45%,rgba(18,36,28,.82) 100%)}
-.page-hero .wrap{position:relative;z-index:2;padding:7rem 0 3rem}
+.page-hero .wrap{position:relative;z-index:2;padding:7rem clamp(1.15rem,4vw,2.5rem) 3rem}
 .page-hero .eyebrow{color:var(--cream-lt)}
 .page-hero h1{color:#fff;font-size:clamp(2.1rem,1.5rem + 3vw,3.6rem);font-weight:500;max-width:22ch;text-shadow:0 2px 26px rgba(0,0,0,.35)}
 .page-hero p{color:#f2ece0;margin-top:1rem;max-width:56ch;text-shadow:0 1px 14px rgba(0,0,0,.3)}
@@ -283,6 +287,12 @@ p{max-width:68ch}
 
 /* other stays strip */
 .other-stays{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem;margin-top:1rem}
+.other-stays--four{grid-template-columns:repeat(4,1fr)}
+@media (max-width:900px){.other-stays--four{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.other-stays--four{grid-template-columns:1fr}}
+/* retreat "how it works" three-step cards: stack on mobile */
+.steps-3{grid-template-columns:repeat(3,1fr)}
+@media (max-width:760px){.steps-3{grid-template-columns:1fr}}
 .mini-stay{display:block;background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:transform .3s,box-shadow .3s;box-shadow:0 8px 24px rgba(27,58,45,.08)}
 .mini-stay:hover{transform:translateY(-5px);box-shadow:0 16px 36px rgba(27,58,45,.14)}
 .mini-stay img{width:100%;aspect-ratio:16/10;object-fit:cover}
