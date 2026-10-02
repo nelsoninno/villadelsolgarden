@@ -1,7 +1,7 @@
 {
   "name": "Villa del Sol Garden",
   "short_name": "Villa del Sol",
-  "description": "Beachfront wellness villa in El Salvador, 30 minutes from the airport.",
+  "description": "Beachfront wellness Villa in El Salvador, 30 minutes from the airport.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
